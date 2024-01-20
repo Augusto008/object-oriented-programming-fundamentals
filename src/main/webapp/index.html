@@ -3,9 +3,55 @@
     <head>
         <title>Start Page</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="webjars/bootstrap/5.3.2/css/bootstrap.css" type="text/css">
+        <script src="webjars/jquery/3.7.1/dist/jquery.js"></script>
+        <script src="webjars/popper.js/2.11.7/umd/popper.js"></script>
+        <script src="webjars/bootstrap/5.3.2/js/bootstrap.js"></script>
     </head>
-    <body>
-        <h1>Hello World!</h1>
-        <h2>Are you ready to learn Object-Oriented Programming?</h2>
+    <body class="bg-dark" style="min-height: 100vh;">
+        <header>
+            <nav class="navbar navbar-expand-md" style="background-color: #C74634;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">OOP Fundamentals</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-md-flex justify-content-md-between" id="navbarNavDropdown">
+                        <ul class="navbar-nav flex-md-fill align-items-end align-items-md-center justify-content-md-center row gap-0 column-gap-2">
+                            <li class="nav-item col-auto">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item col-auto">
+                                <a class="nav-link" href="/lessons">Lessons</a>
+                            </li>
+                            <li class="nav-item col-auto">
+                                <a class="nav-link" href="/practice">Practice</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="text-light">
+            <section class="col-md-10 col-xl-8 py-5 mx-4 mx-md-auto text-center">
+                <h1 class="col-12 text-warning">Hello World!</h1>
+                <h2>Are you ready to learn Object-Oriented Programming?</h2>
+            </section>
+            <section class="row bg-light bg-gradient py-3 m-0" style="--bs-bg-opacity: .2;">
+                <h2 class="text-center">How would you like to proceed?</h2>
+                <div class="col-10 col-xl-8 py-3 mx-auto">
+                    <div class="row gap-0 column-gap-3 d-flex">
+                        <div class="btn col border border-light border-gradient">
+                            <h3>Lessons</h3>
+                            <p>Learn Object-Oriented Programming</p>
+                        </div>
+                        <div class="btn col border border-light">
+                            <h3>Practice</h3>
+                            <p>Test your knowledge</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
